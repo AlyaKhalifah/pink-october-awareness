@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(45deg, #FCE4EC, #F8BBD0, #F48FB1);
+  
+  }
+#welcome h1 {
+   background: rgba(255, 255, 255, 0.15);
+  backdrop-filter:blur(5px);
+   color:#8E3157;
+   border:2px solid white;
+  padding:20px;
+  border-radius:12px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#button{
+  background-color:#8E3157;
+  color:white;
+  border-radius: 14px;
+    text-align: center;
+  padding:20px;
+  font-size: 20px;
+  border: none;
+  transition: 0.3s;
+}
+#button:hover{
+  background-color: #B84D78;
+}
+#content {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border:2px solid white;
+  border-radius:12px;
+
+}
+#button, #back {
+  background-color:#8E3157;
+  color:white;
+  border-radius: 14px;
+    text-align: center;
+  padding:20px;
+  font-size: 20px;
+  border: none;
+  transition: 0.3s;
+}
+#button:hover,#back:hover{
+  background-color: #B84D78;
+}
+#back {
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+#welcome {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+#welcome h1 {
+  position: static;
+  transform: none;
+  margin: 0;
+}
+
+#welcome #button {
+  position: static;
+  transform: none;
+  margin: 0;
+}
+
+#button {
+  display: block;
+  margin: 20px auto;
+}
+#content h2 {
+  color: #8E3157;
+  margin-top: 30px;
+}
+
+#content p {
+  line-height: 1.9;
+  margin: 15px auto;
+  max-width: 700px;
+}
+
+#content hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 25px 0;
+}
+#turtle {
+font-size: 50px;
+text-align: center;
+margin: 25px auto 10px;
+}
+#turtle {
+animation: turtleWalk 3s ease-in-out infinite alternate;
+}
+
+@keyframes turtleWalk {
+from {
+transform: translateX(-30px);
+}
+to {
+transform: translateX(30px);
+}
+}
