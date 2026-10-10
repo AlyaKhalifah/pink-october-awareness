@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Pink October</title>
+</head>
+<body>
+   <div id="welcome">
+  <h1>
+    اليوم العالمي لسرطان الثدي
+  </h1>
+ <button id="button">اكتشفي المبادرة</button>
+   </div>
+  <div id="content">
+  <h1>أكتوبر الوردي 🎀</h1>
+    <h2> معًا نحو وعي أكبر بسرطان الثدي</h2>
+  <p>
+  أكتوبر الوردي هو شهر للتوعية بسرطان الثدي، يهدف إلى نشر المعرفة
+  بأهمية صحة الثدي، والتشجيع على الاهتمام بالصحة وطلب المشورة الطبية.
+</p>
+    <hr>
+    <h2>🌸 لماذا التوعية مهمة؟</h2>
+
+<p>
+  تساعد التوعية على معرفة التغيرات التي تستدعي الانتباه،
+  وفهم أهمية الفحوصات المناسبة وفقًا للعمر والتاريخ الصحي.
+</p>
+    <h2>💗 اعرفي ما هو طبيعي بالنسبة لكِ</h2>
+
+<p>
+  انتبهي لأي تغيّر جديد في الثدي أو منطقة الإبط، مثل ظهور كتلة
+  أو تغيّر في الشكل أو الجلد أو الحلمة. هذه التغيّرات لا تعني
+  بالضرورة وجود سرطان، لكن من المهم استشارة مختص صحي عند ملاحظتها.
+</p>
+    <h2>🎗️ الكشف المبكر مهم</h2>
+
+<p>
+  تساعد الفحوصات الموصى بها طبيًا على اكتشاف سرطان الثدي مبكرًا.
+  ويختلف توقيت الفحوصات المناسبة حسب العمر وعوامل الخطورة،
+  لذا يُنصح باستشارة مختص صحي لمعرفة الخيارات المناسبة.
+</p>
+    <h2>✨ رسالتنا</h2>
+
+<p>
+  المعرفة وعي، والوعي خطوة نحو صحة أفضل.
+  انشري الوعي، وشاركي المعلومة الصحيحة، وشجّعي من حولكِ على
+  الاهتمام بصحتهن.
+</p>
+    <button id="back">العودة إلى الصفحة الرئيسية</button>
+</div>
+  <div id="turtle">🐢</div>
+  <script>
+  const welcome = document.getElementById("welcome")
+const button = document.getElementById("button")
+  const content =
+  document.getElementById("content");
+  const back =
+  document.getElementById("back");
+  button.addEventListener("click", () => {
+  welcome.style.display = "none";
+    content.style.display = "block";
+    
+})
+  back.addEventListener("click",()=>{
+  content.style.display = "none";
+  welcome.style.display = "flex";
+})
+</script>
+</body>
+</html>
